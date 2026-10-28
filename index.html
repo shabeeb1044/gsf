@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gulf Fihaa Tourism — visa services, holiday packages, and global journeys from Dubai and Oman."
+    />
+    <meta name="theme-color" content="#0B1B3D" />
+    <title>GFT | Travel Beyond Limits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="assets/hero-dubai.jpg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="data.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Gulf Fihaa Tourism home">
+          <img src="assets/gft-logo.png" alt="Gulf Fihaa Tourism LLC" width="255" height="107" />
+        </a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a class="active" href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="visas.html">Visa Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Journal</a>
+          <a href="about.html">About Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="phone-link" href="tel:+971565691629"><small>Call us</small>+971 56 569 1629</a>
+          <a class="header-cta" href="contact.html">Plan Your Trip</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="visas.html">Visa Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Journal</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-slides" id="hero-slides"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <div class="hero-copy-wrap">
+            <p class="eyebrow">Explore · Discover · Experience</p>
+            <h1 id="hero-title">Travel Beyond <em>Limits.</em></h1>
+            <p class="hero-lead">
+              From seamless visa services to unforgettable global adventures, we make every journey simpler, smoother, and extraordinary.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="destinations.html">Explore Destinations →</a>
+              <a class="btn btn-ghost" href="visas.html">Get a Visa</a>
+            </div>
+            <div class="hero-trust">
+              <span><strong>10,000+</strong> Visas Processed</span>
+            </div>
+          </div>
+          <aside class="hero-side">
+            <a class="place-card" id="place-card" href="destinations.html"></a>
+            <div class="hero-nav">
+              <button type="button" id="hero-prev" aria-label="Previous destination">‹</button>
+              <div class="slide-dots" id="slide-dots"></div>
+              <button type="button" id="hero-next" aria-label="Next destination">›</button>
+            </div>
+          </aside>
+        </div>
+        <div class="hero-meta">
+          <span class="location-label">Dubai · Oman · Worldwide</span>
+          <a class="scroll-cue" href="#featured">Scroll down <i></i></a>
+        </div>
+      </section>
+
+      <section class="packages-carousel" id="featured" aria-labelledby="packages-title">
+        <div class="packages-carousel__header">
+          <p class="kicker">Holiday packages</p>
+          <h2 id="packages-title">Journeys, arranged with care.</h2>
+          <p class="muted">Signature itineraries from the Gulf to the islands, Alps, and historic cities.</p>
+        </div>
+        <div class="swiper packages-swiper" id="packages-swiper">
+          <div class="swiper-wrapper" id="packages-swiper-wrapper">
+            <!-- Slides injected by script.js -->
+          </div>
+          <div class="swiper-pagination packages-dots"></div>
+        </div>
+        <div class="packages-carousel__footer">
+          <a class="btn btn-navy" href="destinations.html">View all packages →</a>
+        </div>
+      </section>
+
+      <section class="section" style="background: #eef3f8">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Visa services</p>
+              <h2>Paperwork, without the noise.</h2>
+              <p class="muted">We prepare visit files with a clear checklist and honest timelines. Outcomes are never guaranteed.</p>
+            </div>
+            <a class="btn btn-navy" href="visas.html">Visa desk</a>
+          </div>
+          <div class="grid cards-3" id="home-visas"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner split">
+          <img src="assets/about-studio.jpg" alt="GFT travel studio in Dubai" />
+          <div>
+            <p class="kicker">About GFT</p>
+            <h2>A Gulf-based studio for people who travel with purpose.</h2>
+            <p class="muted">
+              Gulf Fihaa Tourism LLC plans visas, holidays, and stays from Dubai and Oman. We keep the work quiet, the files complete, and the itineraries spacious.
+            </p>
+            <p style="margin-top: 22px"><a class="btn btn-navy" href="about.html">Our story</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: #eef3f8">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Journal</p>
+              <h2>Notes for better journeys.</h2>
+              <p class="muted">Practical reading on destinations and visa files — written for travellers, not for slogans.</p>
+            </div>
+            <a class="btn btn-navy" href="blog.html">All articles</a>
+          </div>
+          <div class="grid cards-3" id="home-posts"></div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="section-inner split">
+          <div>
+            <p class="kicker">Plan with GFT</p>
+            <h2>Tell us where you need to be.</h2>
+            <p class="muted">Share dates, destination, and visa needs. We reply with a clear next step — not a booking portal pretending to be live.</p>
+          </div>
+          <div>
+            <a class="btn" href="contact.html">Send an enquiry</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/gft-logo.png" alt="Gulf Fihaa Tourism LLC" width="255" height="107" /></a>
+          <p>Gulf Fihaa Tourism LLC — journeys, visas, and stays from Dubai and Oman.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="destinations.html">Holiday packages</a></p>
+          <p><a href="visas.html">Visa services</a></p>
+          <p><a href="gallery.html">Gallery</a></p>
+          <p><a href="blog.html">Travel journal</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="tel:+971565691629">+971 56 569 1629</a></p>
+          <p>Dubai · Oman · Worldwide</p>
+          <p><a href="contact.html">Send an enquiry</a></p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Gulf Fihaa Tourism LLC. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
